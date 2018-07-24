@@ -1,0 +1,7 @@
+/node_modules
+/public/storage
+/.idea
+Homestead.json
+Homestead.yaml
+.env
+/app/Http/Services/AmsService.php

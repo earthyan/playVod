@@ -1,0 +1,38 @@
+{
+    "name": "dianhun/util-http",
+    "version": "0.1.0",
+    "type": "library",
+    "description": "dianhun util http client request.",
+    "keywords": [
+        "dianhun",
+        "util",
+        "http",
+        "request",
+        "php"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+          "name": "Wang Guochao",
+          "email": "wangchao910214@163.com",
+          "homepage": "http://www.icodemo.com/"
+        }
+    ],
+    "config": {
+        "secure-http": false
+    },
+    "require": {
+        "curl/curl": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "DianHun\\Util\\Http\\": ""
+        }
+    },
+    "scripts": {
+        "test": [
+            "@phpcs"
+        ],
+        "phpcs": "phpcs ./"
+    }
+}

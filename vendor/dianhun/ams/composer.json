@@ -1,0 +1,45 @@
+{
+    "name": "dianhun/ams",
+    "version": "0.2.0",
+    "type": "library",
+    "description": "dianhun ams oauth login.",
+    "keywords": [
+        "dianhun",
+        "ams",
+        "oauth",
+        "login",
+        "php"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+          "name": "Wang Guochao",
+          "email": "wangchao910214@163.com",
+          "homepage": "http://www.icodemo.com/"
+        }
+    ],
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "dianhun": {
+            "type": "composer",
+            "url": "http://192.168.110.234:8080/svn/composer"
+        }
+    },
+    "require": {
+        "linearsoft/composer-svn-export": "^0.1.2",
+        "dianhun/util-http": "~0.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DianHun\\Ams\\": "src"
+        }
+    },
+    "scripts": {
+        "test": [
+            "@phpcs"
+        ],
+        "phpcs": "phpcs ./src"
+    }
+}
